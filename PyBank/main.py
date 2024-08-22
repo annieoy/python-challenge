@@ -42,3 +42,16 @@ print(f"Total: ${total_profit_losses}")
 print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]})")
 print(f"Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})")
+
+results = [  
+"Financial Analysis",
+"-----------------------",
+"Total Months: 86",
+"Total: $22564198",
+"Average Change: $-8311.11",
+"Greatest Increase in Profits: Aug-16 ($1862002)",
+"Greatest Decrease in Profits: Feb-14 ($-1825558)",
+]
+
+with open('results.txt', 'w') as file:
+    file.write("\n".join(results))
